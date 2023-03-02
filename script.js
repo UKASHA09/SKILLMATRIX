@@ -6,5 +6,15 @@ navLinks.forEach((link, index) => {
     }
   });
   
-  burger.classList.toggle('toggle');
-  
+  burger.classList.toggle('toggle'); /* Javascript */
+  const navSlide = () => {
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('nav ul');
+    const navLinks = document.querySelectorAll('nav ul li');
+    
+    burger.addEventListener('click', () => {
+    nav.classList.toggle('nav-active');
+});
+}
+
+navSlide();

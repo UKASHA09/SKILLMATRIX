@@ -127,7 +127,6 @@ color: #ffffff;
 
 .partnerships h2 {
 margin-bottom: 30px;
-background-color: #000000;
 }
 
 .partnerships p {
@@ -249,15 +248,57 @@ color: #999;
     }
     }
     
-    /* Javascript */
-    const navSlide = () => {
-    const burger = document.querySelector('.burger');
-    const nav = document.querySelector('nav ul');
-    const navLinks = document.querySelectorAll('nav ul li');
-    
-    burger.addEventListener('click', () => {
-    nav.classList.toggle('nav-active');
-});
+   /* Apply page styles */
+.apply-container {
+  margin: 50px auto;
+  width: 80%;
+  max-width: 800px;
+  text-align: center;
 }
 
-navSlide();
+.apply-container h2 {
+  margin-bottom: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin: 20px 0 10px;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+input[type="submit"] {
+  background-color: #3498db;
+  color: #fff;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #2980b9;
+}
+
+@media (max-width: 576px) {
+  .apply-container {
+    width: 90%;
+  }
+}
+
+ 
